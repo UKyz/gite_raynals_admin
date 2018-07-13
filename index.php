@@ -8,14 +8,6 @@
 
 session_start();
 
-try {
-    $bdd = new PDO('mysql:host=localhost;dbname=domaine_les_reynals;charset=utf8', 'root',
-        'admin', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
-}
-catch (Exception $e) {
-die('Erreur : ' . $e->getMessage());
-}
-
 if (isset($_POST) and !empty($_POST)) {
     $req = $bdd->prepare('SELECT * FROM login WHERE user = :user AND password = :password');
     $req->execute(array(
