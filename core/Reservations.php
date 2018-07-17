@@ -140,14 +140,14 @@ class Reservations
                                 <td>" . $donnees['email'] . "<br />" . $donnees['phone'] . "</td>
                                 <td>
                                     <div class=\"w3-half\">
-                                        <form action=\"./reservation.php\" method=\"post\">
+                                        <form action=\"./index.php?action=refuse_reservation\" method=\"post\">
                                             <input type=\"hidden\" name=\"id\" value=\"" . $donnees['id'] . "\">
                                             <input type=\"hidden\" name=\"choice\" value=\"refuse\">
                                             <input type=\"submit\" value=\"Refuser\" class=\"w3-button w3-theme\">
                                         </form>
                                     </div>
                                     <div class=\"w3-half\">
-                                        <form action=\"./reservation.php\" method=\"post\">
+                                        <form action=\"./index.php?action=accept_reservation\" method=\"post\">
                                             <input type=\"hidden\" name=\"id\" value=\"" . $donnees['id'] . "\">
                                             <input type=\"hidden\" name=\"choice\" value=\"accept\">
                                             <input type=\"submit\" value=\"Accepter\" class=\"w3-button w3-theme\">

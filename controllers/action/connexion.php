@@ -13,15 +13,14 @@ if (isset($_POST) and !empty($_POST)) {
         'password' => md5($_POST['password'])
     ));
 
-    $donnes = $req->fetch();
+    $donnees = $req->fetch();
 
-    if ($donnes == null) {
-        echo "<script>alert(\"Pseudo ou Mot De Passe inccorecte.\");document.location.href ='#'</script>";
+    if (!isset($donnees['user'])) {
+        header("Location: ./index.php?type=login_fail");
     } else {
-        $_SESSION['user'] = $donnes['user'];
+        $_SESSION['user'] = $donnees['user'];
         $_SESSION['type'] = "gite_domaine_les_reynals";
-        $_SESSION['name'] = $donnes['name'];
+        $_SESSION['name'] = $donnees['name'];
+        header("Location: ./?page=index");
     }
-
-    header("Location: ./?page=index");
 }

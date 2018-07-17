@@ -48,6 +48,12 @@
     color: white;
 }
 
+.modal-header2 {
+    padding: 2px 16px;
+    background-color: #e20000;
+    color: white;
+}
+
 .modal-body {padding: 2px 16px;}
 
 .modal-footer {

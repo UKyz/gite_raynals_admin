@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a0fbd895-e9df-4b26-9d2e-6b414e6a6085" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/action/connexion.php" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/action/connexion.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/Reservations.php" beforeDir="false" afterPath="$PROJECT_DIR$/core/Reservations.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates_c/e9aa1d994c8943d0411993ad9765c10b59255249.file.index.tpl.php" beforeDir="false" afterPath="$PROJECT_DIR$/templates_c/e9aa1d994c8943d0411993ad9765c10b59255249.file.index.tpl.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tpl/pages/index.tpl" beforeDir="false" afterPath="$PROJECT_DIR$/tpl/pages/index.tpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/css/w3.css" beforeDir="false" afterPath="$PROJECT_DIR$/web/css/w3.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,29 +20,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/pages/index.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="163" column="76" selection-start-line="163" selection-start-column="76" selection-end-line="163" selection-end-column="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="manage.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/action/manage.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="disable.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/disable.php">
+      <file leaf-file-name="accept_reservation.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/action/accept_reservation.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="503">
-              <caret line="59" column="1" lean-forward="true" selection-start-line="10" selection-end-line="59" selection-end-column="1" />
+              <caret line="80" column="75" selection-start-line="80" selection-start-column="75" selection-end-line="80" selection-end-column="75" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deconnexion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/action/deconnexion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connexion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/action/connexion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -49,32 +50,14 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="36" column="66" lean-forward="true" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
+            <state relative-caret-position="460">
+              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="manage_confirmation.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/modal/manage_confirmation.tpl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_before.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index_before.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="545" lean-forward="true" selection-start-line="545" selection-end-line="545" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="price_confirmation.tpl" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tpl/modal/price_confirmation.tpl">
+      <file leaf-file-name="accept_reservation.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/modal/accept_reservation.tpl">
           <provider selected="true" editor-type-id="text-editor">
             <state>
               <caret selection-end-line="29" selection-end-column="76" />
@@ -82,29 +65,47 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="price.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/action/price.php">
+      <file leaf-file-name="login_fail.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/modal/login_fail.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state relative-caret-position="45">
+              <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/index.php">
+      <file leaf-file-name="w3.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/css/w3.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+            <state relative-caret-position="328">
+              <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Calendrier.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Calendrier.php">
+      <file leaf-file-name="page_connexion.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/pages/page_connexion.tpl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="95" column="46" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
+            <state relative-caret-position="240">
+              <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="refuse_reservation.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/modal/refuse_reservation.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="manage_confirmation.tpl" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tpl/modal/manage_confirmation.tpl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="29" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -127,20 +128,26 @@
         <option value="$PROJECT_DIR$/config/config_init.php" />
         <option value="$PROJECT_DIR$/config/defines.inc.php" />
         <option value="$PROJECT_DIR$/controllers/connexion/connexion.php" />
-        <option value="$PROJECT_DIR$/controllers/action/connexion.php" />
         <option value="$PROJECT_DIR$/controllers/action/deconnexion.php" />
         <option value="$PROJECT_DIR$/tpl/footer.tpl" />
         <option value="$PROJECT_DIR$/tpl/header.tpl" />
         <option value="$PROJECT_DIR$/tpl/pages/page_connexion.tpl" />
         <option value="$PROJECT_DIR$/core/Calendrier.php" />
-        <option value="$PROJECT_DIR$/core/Reservations.php" />
         <option value="$PROJECT_DIR$/controllers/index.php" />
         <option value="$PROJECT_DIR$/controllers/action/price.php" />
         <option value="$PROJECT_DIR$/tpl/pages/index.tpl" />
         <option value="$PROJECT_DIR$/tpl/modal/price_confirmation.tpl" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/tpl/modal/manage_confirmation.tpl" />
         <option value="$PROJECT_DIR$/controllers/action/manage.php" />
+        <option value="$PROJECT_DIR$/core/Reservations.php" />
+        <option value="$PROJECT_DIR$/controllers/action/accept_reservation.php" />
+        <option value="$PROJECT_DIR$/controllers/action/refuse_reservation.php" />
+        <option value="$PROJECT_DIR$/tpl/modal/refuse_reservation.tpl" />
+        <option value="$PROJECT_DIR$/tpl/modal/accept_reservation.tpl" />
+        <option value="$PROJECT_DIR$/tpl/modal/login_fail.tpl" />
+        <option value="$PROJECT_DIR$/web/css/w3.css" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/controllers/action/connexion.php" />
       </list>
     </option>
   </component>
@@ -266,12 +273,12 @@
       <option name="presentableId" value="Default" />
       <updated>1531493338383</updated>
       <workItem from="1531493339920" duration="527000" />
-      <workItem from="1531813610994" duration="6844000" />
+      <workItem from="1531813610994" duration="11019000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17665000" />
+    <option name="totallyTimeSpent" value="21840000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1334" y="112" width="1215" height="1030" extended-state="0" />
@@ -305,30 +312,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/w3.css" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="2" selection-start-line="2" selection-start-column="2" selection-end-line="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connexion.php" />
-    <entry file="file://$PROJECT_DIR$/deconnexion.php" />
-    <entry file="file://$PROJECT_DIR$/reservation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/datepickk/dist/datepickk.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2445">
-          <caret line="163" column="71" selection-start-line="163" selection-start-column="62" selection-end-line="163" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/w3.css" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -380,13 +363,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html" />
-    <entry file="file://$PROJECT_DIR$/reservation.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/deconnexion.php" />
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -437,31 +413,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/deconnexion.php" />
     <entry file="file://$PROJECT_DIR$/connexion.php" />
-    <entry file="file://$PROJECT_DIR$/tpl/pages/page_connexion.tpl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tpl/header.tpl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/action/connexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/action/deconnexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -476,20 +431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="95" column="46" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Reservations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-202">
-          <caret line="122" column="44" lean-forward="true" selection-start-line="122" selection-start-column="44" selection-end-line="122" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -514,13 +455,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="36" column="66" lean-forward="true" selection-start-line="36" selection-start-column="66" selection-end-line="36" selection-end-column="66" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index_before.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="575">
@@ -535,24 +469,115 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tpl/modal/manage_confirmation.tpl">
+    <entry file="file://$PROJECT_DIR$/controllers/action/manage.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="51" selection-start-line="16" selection-start-column="51" selection-end-line="16" selection-end-column="51" />
+        <state relative-caret-position="675">
+          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tpl/pages/index.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="163" column="76" selection-start-line="163" selection-start-column="76" selection-end-line="163" selection-end-column="76" />
+        <state relative-caret-position="101">
+          <caret line="162" column="36" lean-forward="true" selection-start-line="162" selection-start-column="36" selection-end-line="162" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/action/manage.php">
+    <entry file="file://$PROJECT_DIR$/core/Reservations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="50" column="28" lean-forward="true" selection-start-line="50" selection-start-column="28" selection-end-line="50" selection-end-column="28" />
+        <state relative-caret-position="203">
+          <caret line="149" column="80" selection-start-line="149" selection-start-column="80" selection-end-line="149" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="109" selection-start-line="109" selection-end-line="109" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/action/refuse_reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="43" column="75" selection-start-line="43" selection-start-column="75" selection-end-line="43" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="60" selection-start-line="16" selection-start-column="60" selection-end-line="16" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/modal/manage_confirmation.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="29" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/action/accept_reservation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="80" column="75" selection-start-line="80" selection-start-column="75" selection-end-line="80" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/modal/refuse_reservation.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="56" selection-start-line="9" selection-start-column="56" selection-end-line="9" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/modal/accept_reservation.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="29" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/action/deconnexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/pages/page_connexion.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="58" selection-start-line="16" selection-start-column="58" selection-end-line="16" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/action/connexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tpl/modal/login_fail.tpl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/css/w3.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="328">
+          <caret line="48" column="1" lean-forward="true" selection-start-line="48" selection-start-column="1" selection-end-line="48" selection-end-column="1" />
         </state>
       </provider>
     </entry>
