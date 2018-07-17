@@ -3,9 +3,9 @@
 if ($_SERVER['SERVER_NAME'] == "localhost" OR $_SERVER['SERVER_NAME'] == "sikia.synology.me"
     OR $_SERVER['SERVER_NAME'] == "192.168.1.59") {
     $host = "localhost";
-    $dbname = "gite_raynales";
+    $dbname = "domaine_les_reynals";
     $dbuser = "root";
-    $dbmdp = "root";
+    $dbmdp = "admin";
     $dbport = "3306";
 
     // Afficher les erreurs à l'écran
