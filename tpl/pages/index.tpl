@@ -106,7 +106,7 @@
     </script>
 
     <div class="w3-half price_form">
-        <form class="w3-container w3-card-4" action="price.php" method="post">
+        <form class="w3-container w3-card-4" action="./index.php?action=price" method="post">
             <h2>Changer les prix</h2>
             <div class="w3-section">
                 <input type="text" class="w3-input" name="date_begin" id="date_begin_1"
@@ -161,7 +161,7 @@
     </script>
 
     <div class="w3-half price_form">
-        <form class="w3-container w3-card-4" action="disable.php" method="post">
+        <form class="w3-container w3-card-4" action="index.php?action=manage" method="post">
             <h2>Changer les jours réservables</h2>
             <div class="w3-section">
                 <input type="text" class="w3-input" name="date_begin" id="date_begin_2"

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-07-17 11:25:05
+<?php /* Smarty version Smarty-3.1.12, created on 2018-07-17 12:18:01
          compiled from "/Users/victorfauquembergue/Sites/gite-backend-projet/tpl/pages/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19691238015b4c682f7c12e8-24112360%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e9aa1d994c8943d0411993ad9765c10b59255249' => 
     array (
       0 => '/Users/victorfauquembergue/Sites/gite-backend-projet/tpl/pages/index.tpl',
-      1 => 1531819503,
+      1 => 1531822679,
       2 => 'file',
     ),
   ),
@@ -141,7 +141,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </script>
 
     <div class="w3-half price_form">
-        <form class="w3-container w3-card-4" action="price.php" method="post">
+        <form class="w3-container w3-card-4" action="./index.php?action=price" method="post">
             <h2>Changer les prix</h2>
             <div class="w3-section">
                 <input type="text" class="w3-input" name="date_begin" id="date_begin_1"
@@ -197,7 +197,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     </script>
 
     <div class="w3-half price_form">
-        <form class="w3-container w3-card-4" action="disable.php" method="post">
+        <form class="w3-container w3-card-4" action="index.php?action=manage" method="post">
             <h2>Changer les jours réservables</h2>
             <div class="w3-section">
                 <input type="text" class="w3-input" name="date_begin" id="date_begin_2"
