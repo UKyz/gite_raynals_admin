@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-07-17 12:18:01
+<?php /* Smarty version Smarty-3.1.12, created on 2018-07-19 10:23:58
          compiled from "/Users/victorfauquembergue/Sites/gite-backend-projet/tpl/pages/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19691238015b4c682f7c12e8-24112360%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e9aa1d994c8943d0411993ad9765c10b59255249' => 
     array (
       0 => '/Users/victorfauquembergue/Sites/gite-backend-projet/tpl/pages/index.tpl',
-      1 => 1531822679,
+      1 => 1531988637,
       2 => 'file',
     ),
   ),
@@ -144,6 +144,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <form class="w3-container w3-card-4" action="./index.php?action=price" method="post">
             <h2>Changer les prix</h2>
             <div class="w3-section">
+                <input class="w3-input" type="number" name="price" required>
+                <label>Prix par nuit (en €) *</label>
+            </div>
+            <div class="w3-section">
                 <input type="text" class="w3-input" name="date_begin" id="date_begin_1"
                        required="">
                 <label>Date de début *</label>
@@ -152,10 +156,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <input type="text" class="w3-input" name="date_end" id="date_end_1"
                        required="">
                 <label>Date de fin *</label>
-            </div>
-            <div class="w3-section">
-                <input class="w3-input" type="number" name="price" required>
-                <label>Prix par nuit (en €) *</label>
             </div>
             <div class="w3-section">
                 <input type="submit" value="Accepter" class="w3-button w3-theme">
@@ -173,7 +173,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     <div class="w3-half price_form" id="demoPicker3"></div>
     <script>
-        let now3 = new Date(moment());
         let demoPicker3 = new Datepickk({
             container: document.querySelector('#demoPicker3'),
             inline: true,
@@ -200,6 +199,16 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <form class="w3-container w3-card-4" action="index.php?action=manage" method="post">
             <h2>Changer les jours réservables</h2>
             <div class="w3-section">
+                <div class='w3-half'>
+                    <input class="w3-check" type='radio' name="choice" value='disable' checked>
+                    <label>Non Réservable</label>
+                </div>
+                <div class='w3-half'>
+                    <input class="w3-check" type='radio' name="choice" value='able'>
+                    <label>Réservable</label>
+                </div>
+            </div>
+            <div class="w3-section">
                 <input type="text" class="w3-input" name="date_begin" id="date_begin_2"
                        required="">
                 <label>Date de début *</label>
@@ -208,16 +217,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                 <input type="text" class="w3-input" name="date_end" id="date_end_2"
                        required="">
                 <label>Date de fin *</label>
-            </div>
-            <div class="w3-section">
-                <div class='w3-half'>
-                    <input class="w3-input" type='radio' name="choice" value='disable' checked>
-                    <label>Non Réservable</label>
-                </div>
-                <div class='w3-half'>
-                    <input class="w3-input" type='radio' name="choice" value='able'>
-                    <label>Réservable</label>
-                </div>
             </div>
             <div class="w3-section">
                 <input type="submit" value="Accepter" class="w3-button w3-theme">
@@ -310,66 +309,4 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         $('input[id="date_end_2"]').datepicker("option", "dateFormat", "dd/mm/yy");
         $('input[id="date_end_2"]').datepicker("option", $.datepicker.regional["fr"] = lang);
     });
-</script>
-<script>
-    // Side navigation
-    function w3_open() {
-        let x = document.getElementById("mySidebar");
-        x.style.width = "100%";
-        x.style.fontSize = "40px";
-        x.style.paddingTop = "10%";
-        x.style.display = "block";
-    }
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-    }
-
-    // Tabs
-    function openCity(evt, cityName) {
-        let i;
-        let x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        let activebtn = document.getElementsByClassName("testbtn");
-        for (i = 0; i < x.length; i++) {
-            activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " w3-dark-grey";
-    }
-
-    // Accordions
-    function myAccFunc(id) {
-        let x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") === -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-
-    // Slideshows
-    let slideIndex = 1;
-
-    function plusDivs(n) {
-        slideIndex = slideIndex + n;
-        showDivs(slideIndex);
-    }
-
-    // Progress Bars
-    function move() {
-        let elem = document.getElementById("myBar");
-        let width = 5;
-        let id = setInterval(frame, 10);
-        function frame() {
-            if (width === 100) {
-                clearInterval(id);
-            } else {
-                width++;
-                elem.style.width = width + '%';
-                elem.innerHTML = (width * 1)  + '%';
-            }
-        }
-    }
 </script><?php }} ?>

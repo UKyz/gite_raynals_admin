@@ -109,6 +109,10 @@
         <form class="w3-container w3-card-4" action="./index.php?action=price" method="post">
             <h2>Changer les prix</h2>
             <div class="w3-section">
+                <input class="w3-input" type="number" name="price" required>
+                <label>Prix par nuit (en €) *</label>
+            </div>
+            <div class="w3-section">
                 <input type="text" class="w3-input" name="date_begin" id="date_begin_1"
                        required="">
                 <label>Date de début *</label>
@@ -117,10 +121,6 @@
                 <input type="text" class="w3-input" name="date_end" id="date_end_1"
                        required="">
                 <label>Date de fin *</label>
-            </div>
-            <div class="w3-section">
-                <input class="w3-input" type="number" name="price" required>
-                <label>Prix par nuit (en €) *</label>
             </div>
             <div class="w3-section">
                 <input type="submit" value="Accepter" class="w3-button w3-theme">
@@ -138,7 +138,6 @@
 
     <div class="w3-half price_form" id="demoPicker3"></div>
     <script>
-        let now3 = new Date(moment());
         let demoPicker3 = new Datepickk({
             container: document.querySelector('#demoPicker3'),
             inline: true,
@@ -164,6 +163,16 @@
         <form class="w3-container w3-card-4" action="index.php?action=manage" method="post">
             <h2>Changer les jours réservables</h2>
             <div class="w3-section">
+                <div class='w3-half'>
+                    <input class="w3-check" type='radio' name="choice" value='disable' checked>
+                    <label>Non Réservable</label>
+                </div>
+                <div class='w3-half'>
+                    <input class="w3-check" type='radio' name="choice" value='able'>
+                    <label>Réservable</label>
+                </div>
+            </div>
+            <div class="w3-section">
                 <input type="text" class="w3-input" name="date_begin" id="date_begin_2"
                        required="">
                 <label>Date de début *</label>
@@ -172,16 +181,6 @@
                 <input type="text" class="w3-input" name="date_end" id="date_end_2"
                        required="">
                 <label>Date de fin *</label>
-            </div>
-            <div class="w3-section">
-                <div class='w3-half'>
-                    <input class="w3-input" type='radio' name="choice" value='disable' checked>
-                    <label>Non Réservable</label>
-                </div>
-                <div class='w3-half'>
-                    <input class="w3-input" type='radio' name="choice" value='able'>
-                    <label>Réservable</label>
-                </div>
             </div>
             <div class="w3-section">
                 <input type="submit" value="Accepter" class="w3-button w3-theme">
@@ -274,66 +273,4 @@
         $('input[id="date_end_2"]').datepicker("option", "dateFormat", "dd/mm/yy");
         $('input[id="date_end_2"]').datepicker("option", $.datepicker.regional["fr"] = lang);
     });
-</script>
-<script>
-    // Side navigation
-    function w3_open() {
-        let x = document.getElementById("mySidebar");
-        x.style.width = "100%";
-        x.style.fontSize = "40px";
-        x.style.paddingTop = "10%";
-        x.style.display = "block";
-    }
-    function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-    }
-
-    // Tabs
-    function openCity(evt, cityName) {
-        let i;
-        let x = document.getElementsByClassName("city");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        let activebtn = document.getElementsByClassName("testbtn");
-        for (i = 0; i < x.length; i++) {
-            activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
-        }
-        document.getElementById(cityName).style.display = "block";
-        evt.currentTarget.className += " w3-dark-grey";
-    }
-
-    // Accordions
-    function myAccFunc(id) {
-        let x = document.getElementById(id);
-        if (x.className.indexOf("w3-show") === -1) {
-            x.className += " w3-show";
-        } else {
-            x.className = x.className.replace(" w3-show", "");
-        }
-    }
-
-    // Slideshows
-    let slideIndex = 1;
-
-    function plusDivs(n) {
-        slideIndex = slideIndex + n;
-        showDivs(slideIndex);
-    }
-
-    // Progress Bars
-    function move() {
-        let elem = document.getElementById("myBar");
-        let width = 5;
-        let id = setInterval(frame, 10);
-        function frame() {
-            if (width === 100) {
-                clearInterval(id);
-            } else {
-                width++;
-                elem.style.width = width + '%';
-                elem.innerHTML = (width * 1)  + '%';
-            }
-        }
-    }
 </script>

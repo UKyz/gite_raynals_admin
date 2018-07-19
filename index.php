@@ -3,10 +3,6 @@
 // Initialisation de l'environnement
 include('./config/config_init.php');
 
-// Fonctions
-//include('./controllers/fonctions.php');
-
-//include('./controllers/action/maj_bdd_manuelle.php');
 //Variable pour gérer laffichage du portail si Mise en Prod
 $mep = false;
 
@@ -40,12 +36,6 @@ if (isset($_GET['page']) &&
 if (isset($_GET['type']) &&
     file_exists(_TPL_ . 'modal/' . str_replace('.', '', $_GET['type']) . '.tpl')) {
     $smarty->display(_TPL_ . 'modal/' . $_GET['type'] . '.tpl');
-}
-
-if(isset($_SESSION['u_id']) && !empty($_SESSION['u_id'])){
-    $smarty->assign('session_u_id', $_SESSION['u_id']);
-}else{
-    $smarty->assign('session_u_id', null);
 }
 
 $smarty->display(_TPL_ . 'footer.tpl');
