@@ -7,13 +7,7 @@
  */
 
 if (isset($_POST) and !empty($_POST)) {
-    $req = $bdd->prepare('SELECT * FROM login WHERE user = :user AND password = :password');
-    $req->execute(array(
-        'user' => $_POST['user'],
-        'password' => md5($_POST['password'])
-    ));
-
-    $donnees = $req->fetch();
+    $donnees = Connexion::login($_POST);
 
     if (!isset($donnees['user'])) {
         header("Location: ./index.php?type=login_fail");

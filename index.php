@@ -28,7 +28,6 @@ if (isset($_GET['page']) &&
 } else if (isset($_SESSION) && $_SESSION['type'] == "gite_domaine_les_reynals") {
     $smarty->display(_TPL_ . 'pages/' . 'index.tpl');
 } else {
-    //$smarty->assign('current_page', "index");
     $smarty->display(_TPL_ . 'pages/page_connexion.tpl');
 }
 
@@ -38,4 +37,4 @@ if (isset($_GET['type']) &&
     $smarty->display(_TPL_ . 'modal/' . $_GET['type'] . '.tpl');
 }
 
-$smarty->display(_TPL_ . 'footer.tpl');
+//$smarty->display(_TPL_ . 'footer.tpl');

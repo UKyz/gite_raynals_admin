@@ -6,7 +6,7 @@
             <h2>La réservation a bien été refusé</h2>
         </div>
         <div class="modal-body">
-            <p>La réservation est maintenant supprimé.</p>
+            <p>Vous pouvez retrouver la réservation refusé dans l'onglet réservation refusé.</p>
             <p>Un email de refus a été envoyé au client.</p>
         </div>
     </div>

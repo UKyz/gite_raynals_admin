@@ -5,7 +5,7 @@ session_start();
 header("Cache-Control: no-cache");
 
 //Défini le répertoire racine
-define('_ROOT_', "gite-backend-projet");
+define('_ROOT_', "gite_raynals_back");
 
 // Chargement Smarty et Defines
 require('defines.inc.php');
@@ -15,6 +15,7 @@ date_default_timezone_set('Europe/Paris');
 
 // Chargement du coeur
 $files = scandir(_CORE_);
+
 foreach ($files as $filename)
 {
     if (is_file(_CORE_.$filename))

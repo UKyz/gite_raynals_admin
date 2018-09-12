@@ -12,8 +12,4 @@ $name = $_SESSION['name'];
 
 session_destroy();
 
-echo "<script>alert('À bientôt " . $name . ".');
-    document.location.href = './index.php';
-    </script>";
-
-?>
+header('Location: ./index.php');

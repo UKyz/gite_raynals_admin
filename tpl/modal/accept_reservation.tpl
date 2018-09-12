@@ -27,4 +27,5 @@
     }
 </script>
 
-<script>document.getElementById('myModal').style.display = 'block';</script>
+<script>document.getElementById('myModal').style.display = 'block';
+    openMenu(event,'Reservations1')</script>

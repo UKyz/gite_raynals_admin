@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-07-19 10:23:58
+<?php /* Smarty version Smarty-3.1.12, created on 2018-07-24 16:16:06
          compiled from "/Users/victorfauquembergue/Sites/gite-backend-projet/tpl/pages/index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:19691238015b4c682f7c12e8-24112360%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e9aa1d994c8943d0411993ad9765c10b59255249' => 
     array (
       0 => '/Users/victorfauquembergue/Sites/gite-backend-projet/tpl/pages/index.tpl',
-      1 => 1531988637,
+      1 => 1532441764,
       2 => 'file',
     ),
   ),
@@ -25,6 +25,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'manage_reservations_script' => 0,
     'price_calendrier_script' => 0,
     'available_calendrier_script' => 0,
+    'services_script' => 0,
   ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
@@ -35,6 +36,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <a href = '#demandes' class='w3-bar-item w3-button w3-padding-16' id='btn_demandes'> Demandes</a >
     <a href = '#prix' class='w3-bar-item w3-button w3-padding-16' id='btn_prix'> Prix</a >
     <a href = '#reservable' class='w3-bar-item w3-button w3-padding-16' id='btn_reservable'> Disponibilité</a >
+    <a href = '#services' class='w3-bar-item w3-button w3-padding-16' id='btn_services'> Services</a >
     <a href = './index.php?action=deconnexion' class='w3-bar-item w3-button w3-padding-16' > Se Déconnecter</a >
 </div >
 
@@ -145,17 +147,17 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <h2>Changer les prix</h2>
             <div class="w3-section">
                 <input class="w3-input" type="number" name="price" required>
-                <label>Prix par nuit (en €) *</label>
+                <label>Prix par nuit (en €)</label>
             </div>
             <div class="w3-section">
                 <input type="text" class="w3-input" name="date_begin" id="date_begin_1"
                        required="">
-                <label>Date de début *</label>
+                <label>Date de début</label>
             </div>
             <div class="w3-section">
                 <input type="text" class="w3-input" name="date_end" id="date_end_1"
                        required="">
-                <label>Date de fin *</label>
+                <label>Date de fin</label>
             </div>
             <div class="w3-section">
                 <input type="submit" value="Accepter" class="w3-button w3-theme">
@@ -211,15 +213,69 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <div class="w3-section">
                 <input type="text" class="w3-input" name="date_begin" id="date_begin_2"
                        required="">
-                <label>Date de début *</label>
+                <label>Date de début</label>
             </div>
             <div class="w3-section">
                 <input type="text" class="w3-input" name="date_end" id="date_end_2"
                        required="">
-                <label>Date de fin *</label>
+                <label>Date de fin</label>
             </div>
             <div class="w3-section">
                 <input type="submit" value="Accepter" class="w3-button w3-theme">
+            </div>
+        </form>
+    </div>
+</div>
+
+<hr>
+
+<div class="w3-row-padding" id="services">
+    <div class="w3-center">
+        <h2>Gérer les services</h2>
+        <p w3-class="w3-large">Gérer les services facturables.</p>
+    </div>
+
+    <div class="w3-half">
+        <div class="w3-center">
+            <h2>Vos services</h2>
+            <p w3-class="w3-large">Les services facturables s'afficheront ici.</p>
+        </div>
+        <div class="w3-responsive w3-card-4">
+            <?php echo $_smarty_tpl->tpl_vars['services_script']->value;?>
+
+        </div>
+    </div>
+
+    <div class="w3-half price_form">
+        <form class="w3-container w3-card-4" action="index.php?action=service" method="post">
+            <h2>Changer les frais de services</h2>
+            <div class="w3-section">
+                <input type="number" class="w3-input" name="nb_days_min" id="nb_days_min"
+                       required="" value="1">
+                <label>Nombre de jours minimum</label>
+            </div>
+            <div class="w3-half w3-section">
+                <input type="number" class="w3-input" name="nb_days_max" id="nb_days_max"
+                       required="" value="0">
+                <label>Nombre de jours maximum</label>
+            </div>
+            <div class="w3-half w3-section">
+                <input type="checkbox" class="w3-check" name="nb_days_max" id="nb_days_max"
+                       value="0" checked>
+                <label>Nombre de jours illimité</label>
+            </div>
+            <div class="w3-section">
+                <textarea type="text" class="w3-input" name="details" id="details"
+                          required=""></textarea>
+                <label>Détail</label>
+            </div>
+            <div class="w3-section">
+                <input type="number" class="w3-input" name="price" id="price"
+                       required="">
+                <label>Prix</label>
+            </div>
+            <div class="w3-section">
+                <input type="submit" value="Ajouter" class="w3-button w3-theme">
             </div>
         </form>
     </div>
@@ -267,6 +323,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             $("#reservable").show();
             $('html, body').animate({
                 scrollTop: $('#reservable').offset().top
+            }, 'slow');
+        });
+
+        $("#btn_services").click(() => {
+            $("#services").show();
+            $('html, body').animate({
+                scrollTop: $('#services').offset().top
             }, 'slow');
         });
     });

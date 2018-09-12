@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.12, created on 2018-07-17 09:48:12
+<?php /* Smarty version Smarty-3.1.12, created on 2018-07-23 12:33:11
          compiled from "/Users/victorfauquembergue/Sites/gite-backend-projet/tpl/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:20043278525b4c682f795b62-07743731%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '9ddcfd87906a4a5bb97038f0135b103e7272a255' => 
     array (
       0 => '/Users/victorfauquembergue/Sites/gite-backend-projet/tpl/header.tpl',
-      1 => 1531813691,
+      1 => 1532341989,
       2 => 'file',
     ),
   ),
@@ -26,8 +26,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="./web/css/w3.css">
 <link rel="stylesheet" href="./web/css/theme-teal.css">
-<link rel="stylesheet" href="./web/css/font-awesome.min.css">
+<link rel="stylesheet" href="./web/css/font-awesome-min.css">
 <link rel="stylesheet" href="./node_modules/datepickk/dist/datepickk.css">
+
 <body>
 
 <!-- Header -->

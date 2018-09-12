@@ -1,3 +1,22 @@
+
+.connexion {
+    width: 50%;
+    margin: 100px auto;
+}
+
+@media (max-width:1000px) {
+    .connexion {
+        width: 80%;
+    }
+}
+
+@media (max-width:750px) {
+    .connexion {
+        width: 100%;
+    }
+}
+
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
@@ -93,7 +112,7 @@ button::-moz-focus-inner, [type=button]::-moz-focus-inner, [type=reset]::-moz-fo
 button:-moz-focusring, [type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring{outline:1px dotted ButtonText}
 fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:.35em .625em .75em}
 legend{color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}
-[type=checkbox],[type=radio]{padding:0}
+[type=checkbox],[type=radio]{padding:0; margin-bottom: 20px;}
 [type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}
 [type=search]{-webkit-appearance:textfield;outline-offset:-2px}
 [type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}
@@ -216,7 +235,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .w3-padding-32{padding-top:32px!important;padding-bottom:32px!important}.w3-padding-48{padding-top:48px!important;padding-bottom:48px!important}
 .w3-padding-64{padding-top:64px!important;padding-bottom:64px!important}
 .w3-left{float:left!important}.w3-right{float:right!important}
-.w3-button:hover{color:#000!important;background-color:#ccc!important}
+.w3-button:hover{color:#ff5722!important;background-color:#fff!important}
 .w3-transparent,.w3-hover-none:hover{background-color:transparent!important}
 .w3-hover-none:hover{box-shadow:none!important}
 /* Colors */
